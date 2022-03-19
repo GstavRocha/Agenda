@@ -6,24 +6,24 @@
     <div class="col bg-white border border-sucess rounded shadow p-3 mb-5 bg-white">
       <form>
         <div class="col">
-        <label for="nomeInput" class="col-sm-2 col-form-label display-5"> Nome</label>
-        <input type="text" id="nomeInput" class="form-control" placeholder="fulano de tal">
+          <label for="nomeInput" class="col-sm-2 col-form-label display-5"> Nome</label>
+          <input type="text" id="nomeInput" class="form-control" placeholder="fulano de tal" name="nome" [(ngModel)]="nome">
         </div>
         <div class="col">
           <label for="nomeInput" class="col-md-2 col-form-label display-5"> Telefone</label>
-          <input type="tel" placeholder="8888-8888" id="emailInput" class="form-control">
+          <input type="tel" placeholder="8888-8888" id="emailInput" class="form-control" name="telefone" [(ngModel)]="telefone" >
         </div>
         <div class="col">
           <label for="nomeInput" class="col-md-2 col-form-label display-5"> Email</label>
-          <input type="email" placeholder="exemplo@email.com" id="emailInput" class="form-control">
+          <input type="email" placeholder="exemplo@email.com" id="emailInput" class="form-control" name="email" [(ngModel)]="email">
         </div>
         <div class="col">
           <label for="aniverInput" class="col col-form-label display-5">Data de Nascimento</label>
-          <input type="date" placeholder="dia/mes/ano" id="aniverInput" class="form-control">
+          <input type="date" placeholder="dia/mes/ano" id="aniverInput" class="form-control" name="data" [(ngModel)]="data">
         </div>
         <div class="col-fluid">
           <label for="comentInput" class="col col-form-label display-5">Comentario</label>
-          <input type="email" placeholder="Faça seu Comentario" id="comentInput" class="form-control">
+          <input type="email" placeholder="Faça seu Comentario" id="comentInput" class="form-control" name="comentario" [(ngModel)]="comentario">
         </div>
         <div class="col">
             <p class="display-7">Tipo</p>
@@ -63,11 +63,11 @@
             <th> Tipo</th>
           </tr>
           <tr>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
+            <td>{{nome}}</td>
+            <td>{{telefone}}</td>
+            <td>{{email}}</td>
+            <td>{{data}}</td>
+            <td>{{comentario}}</td>
           </tr>
         </table>
       </form>
