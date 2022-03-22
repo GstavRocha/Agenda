@@ -1,0 +1,50 @@
+<div class="col">
+  <form>
+    <div class="col">
+      <label for="nomeInput" class="col-sm-2 col-form-label display-5"> Nome</label>
+      <input type="text" id="nomeInput" class="form-control" placeholder="fulano de tal" name="nome" [(ngModel)]= "nome">
+    </div>
+    <div class="col">
+      <label for="nomeInput" class="col-md-2 col-form-label display-5"> Telefone</label>
+      <input type="tel" placeholder="8888-8888" id="emailInput" class="form-control" name="telefone">
+    </div>
+    <div class="col">
+      <label for="nomeInput" class="col-md-2 col-form-label display-5"> Email</label>
+      <input type="email" placeholder="exemplo@email.com" id="emailInput" class="form-control" name="email">
+    </div>
+    <div class="col">
+      <label for="aniverInput" class="col col-form-label display-5">Data de Nascimento</label>
+      <input type="date" placeholder="dia/mes/ano" id="aniverInput" class="form-control" name="data">
+    </div>
+    <div class="col-fluid">
+      <label for="comentInput" class="col col-form-label display-5">Comentario</label>
+      <input type="email" placeholder="Faça seu Comentario" id="comentInput" class="form-control" name="comentario">
+    </div>
+    <div class="col">
+        <p class="display-7">Tipo</p>
+    </div>
+    <div class="row w-100">
+      <div class="col-sm-2">
+        <label for="tipoInput" class="form-check-label display-7">Amigos</label>
+        <div class="row-sm-2">
+          <input type="radio" id="comentInput" class="form-check-input">
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <label for="tipoInput" class="form-label display-7">Trabalho</label>
+        <div class="row-sm-2">
+        <input type="radio" id="comentInput" class="form-check-input">
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <label for="tipoInput" class="form-label display-7">Familia</label>
+        <div class="row-sm-2">
+          <input type="radio" id="comentInput" class="form-check-input">
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" value="Adicionar" (click)="adicionar()">Adicionar</button>
+  </form>
+</div>
+
+
